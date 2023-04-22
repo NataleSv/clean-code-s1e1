@@ -64,6 +64,11 @@
   outline: none;
 }
 
+.item__checkbox {
+  margin-left: 9px;
+  margin-right: 10px;
+}
+
 .section__btn,
 .item__btn {
   background: none;
