@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.section__img{
+.section__img {
   width: 100%;
 }
 
@@ -60,7 +60,7 @@
 .section__input,
 .section__btn,
 .item__btn,
-.item__input{
+.item__input {
   outline: none;
 }
 
@@ -92,7 +92,7 @@
 }
 
 .item__input,
-.section__input{
+.section__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -179,6 +179,6 @@
 }
 
 .section__title_none,
-.section__label_none{
+.section__label_none {
   display: none;
 }
