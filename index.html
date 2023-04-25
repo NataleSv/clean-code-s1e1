@@ -1,19 +1,79 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="style.css"
+          media="screen"
+          charset="utf-8">
+  </head>
+  <body class="container">
+    <section class="container__section section">
+      <img class="section__img" src="./eisenhower-matrix.jpg" alt="The 2x2 time management matrix, based on the Eisenhower Method of time management, is the general framework on which Priority Matrix is run. The quadrants organize tasks based on importance and urgency. In Priority Matrix, the four quadrants' default labels are: Critical and Immediate, Critical but not Immediate, Not Critical but Immediate, and Uncategorized.">
+      <a class="section__info"
+         href="https://goal-life.com/page/method/matrix-eisenhower">
+		     Want more details?
+      </a>
+    </section>
+    <main class="container__main">
+      <article class="main__article article">
+        <h3 class="article__title article___title_add">Add Item</h3>
+        <section class="article__section">
+          <h4 class="section__title_none"></h4>
+          <label for="section__input_add" 
+                 class="section__label_none"></label>
+          <input id="section__input_add"
+                 class="section__input"
+                 type="text">
+          <button class="section__btn">Add</button>
+        </section>
+      </article>
+      <article class="main__article article">
+        <h3 class="article__title">Todo</h3>
+        <ul class="article__content content"
+            id="article__content_todo">
+          <li class="content__item item">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label">Pay Bills</label>
+            <input type="text"
+                   class="item__input">
+            <button class="item__btn btn_edit">Edit</button>
+            <button class="item__btn btn_del">
+              <img class="btn_del__img" src="./remove.svg" alt="delete">
+            </button>
+          </li>
+          <li class="content__item item_edit">
+            <input class="item__checkbox" type="checkbox">
+            <label class="item__label label_edit">Go Shopping</label>
+            <input type="text"
+                   value="Go Shopping"
+                   class="item__input input_edit">
+            <button class="item__btn btn_edit">Save</button>
+            <button class="item__btn btn_del">
+              <img class="btn_del__img" src="./remove.svg" alt="delete">
+            </button>
+          </li>
+        </ul>
+      </article>
+      <article class="main__article article">
+        <h3 class="article__title">Completed</h3>
+        <ul class="article__content content"
+            id="article__content_done">
+          <li class="content__item">
+            <input class="item__checkbox" type="checkbox" checked>
+            <label class="item__label label_done">See the Doctor</label>
+            <input type="text"
+                   class="item__input">
+            <button class="item__btn btn_edit">Edit</button>
+            <button class="item__btn btn_del">
+              <img class="btn_del__img" src="./remove.svg" alt="delete">
+            </button>
+          </li>
+        </ul>
+      </article>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
